@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:codepath-python.helloWorld"
+        "onCommand:codepath-python.whereAmI"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "codepath-python.helloWorld",
-				"title": "Hello World"
+				"command": "codepath-python.whereAmI",
+				"title": "Where am I? (code path)"
 			}
 		]
 	},
