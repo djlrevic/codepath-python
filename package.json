@@ -10,7 +10,7 @@
 		"url": "https://github.com/djlrevic/codepath-python"
 	},
 	"engines": {
-		"vscode": "^1.68.0"
+		"vscode": "^1.51.0"
 	},
 	"categories": [
 		"Other"
