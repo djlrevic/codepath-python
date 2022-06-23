@@ -1,8 +1,13 @@
 {
-  "name": "codepath-python",
+	"name": "codepath-python",
 	"displayName": "codepath-python",
-	"description": "",
+	"description": "Print the 'path' to your cursor location in a python dictionary.",
 	"version": "0.0.1",
+	"preview": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/djlrevic/codepath-python"
+	},
 	"engines": {
 		"vscode": "^1.68.0"
 	},
@@ -10,7 +15,7 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:codepath-python.whereAmI"
+		"onCommand:codepath-python.whereAmI"
 	],
 	"main": "./out/extension.js",
 	"contributes": {

@@ -86,19 +86,17 @@ async function asyncRunPythonHelperScript(context: vscode.ExtensionContext): Pro
 			child.stdout.on('data', (data) => {
 				//console.log('stdout: ' + data);
 				allStdOut += data;
-				//console.log(result);
 			});
 
 			let allStdErr = "";
 			child.stderr.on('data', (data) => {
-				//console.log('stdout: ' + data);
+				//console.log('stderr: ' + data);
 				allStdErr += data;
-				//console.log(result);
 			});
 
 			child.on('exit', (exitCode) => {
 				console.log("EXITED! stderrr, if any, follows:");
-				console.log(allStdErr + "\n---");
+				console.log("---\n" + allStdErr + "\n---");
 				resolve(allStdOut); // when this is eventually triggered, the Promise returns this stdOut
 			});
 
